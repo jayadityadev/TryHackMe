@@ -1,0 +1,5 @@
+/.php                [33m (Status: 403)[0m [Size: 292]
+/login.php           [32m (Status: 200)[0m [Size: 882]
+/assets              [36m (Status: 301)[0m [Size: 315][34m [--> http://10.10.208.135/assets/][0m
+/portal.php          [36m (Status: 302)[0m [Size: 0][34m [--> /login.php][0m
+/robots.txt          [32m (Status: 200)[0m [Size: 17]
