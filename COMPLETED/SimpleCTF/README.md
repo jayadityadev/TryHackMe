@@ -209,7 +209,7 @@ We can find the username and password using exploit-db's SQL Injection script.
 	[+] Password cracked: secret
 	```
 	
-**NOTE** - The exploit from exploit-db has gotten relatively old and hence this approach requires a loadfull of environment setup such as the explicit need of Python2 (most modern linux operating systems come with Python3 and doesn't allow a direct installation od Python2 as it is deprecated), pip2, and hence all other dependencies of Python2 and pip2. Also, this exploit takes comparatively more time in grabbing the username and password, whereas the initial approach does it in seconds (as the username can be guessed easily).
+**NOTE** - The exploit from exploit-db has gotten relatively old and hence this approach requires a loadfull of environment setup such as the explicit need of Python2 (most modern linux operating systems come with Python3 and doesn't allow a direct installation of Python2 as it is deprecated), pip2, and hence all other dependencies of Python2 and pip2. Also, this exploit takes comparatively more time in grabbing the username and password, whereas the initial approach does it in seconds (as the username can be guessed easily).
 
 
 <br>
