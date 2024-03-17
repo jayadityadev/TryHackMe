@@ -69,7 +69,7 @@ This room doesn't have a vulnerable machine to work with. Rather it requires the
 	GPS Position                    : 54 deg 17' 41.27" N, 2 deg 15' 1.33" W
 	```
 
-* ### Examining the exif data
+* ### Examining the exif data and searching the web
 
 	It appears that the owner of the file might be somewhat related to the copyright owner. Let's browse the web to see if something matches with the given data.
 
@@ -78,12 +78,16 @@ This room doesn't have a vulnerable machine to work with. Rather it requires the
 	[Twitter](https://twitter.com/owoodflint?lang=en) <br>
 	[GitHub](https://github.com/OWoodfl1nt/)
 
+	Exploring the Twitter account for this person, we find that he uses a free Wireless Access Point with the BSSID: `B4:5D:50:AA:86:41`
+
 	Also, there's a repository `people_finder` in the user's GitHub account that gives some relative intelligence about the owner.
 
 	Also, the `people_finder` repo shows that there's a blog website of this user on [Wordpress](https://oliverwoodflint.wordpress.com/).
 
 	Exploring the blog, gives some more relevant details such as the statement:
-	```Im in New York right now, so I will update this site right away with new photos!```
+	```
+	Im in New York right now, so I will update this site right away with new photos!
+	```
 	which might be the answer to one of the THM Questions.
 
 	Looking up in the source code of the Wordpress blog, something peculiar comes up:
@@ -95,7 +99,7 @@ This room doesn't have a vulnerable machine to work with. Rather it requires the
 	</div><!-- .entry-content -->
 	```
 
-	There's a 
+	There's a white text written in the HTML page, `pennYDr0pper.!`, which might be the person's password.
 
 
 <br>
@@ -104,10 +108,14 @@ This room doesn't have a vulnerable machine to work with. Rather it requires the
 
 * _Q1_: What is this user's avatar of? <br> _A_: `cat`
 * _Q2_: What city is this person in? <br> _A_: `London`
+* _03_: What is the SSID of the WAP he connected to? <br> _A_: `UnileverWifi`
 * _Q3_: What is his personal email address? <br> _A_: `owoodflint@gmail.com`
 * _Q4_: What site did you find his email address on? <br> _A_: `GitHub`
 * _05_: Where has he gone on holiday? <br> _A_: `New York`
+* _06_: What is the person's password? <br> _A_: `pennYDr0pper.!`
 
+
+<br>
 
 	
 ---
