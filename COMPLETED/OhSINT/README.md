@@ -71,35 +71,37 @@ This room doesn't have a vulnerable machine to work with. Rather it requires the
 
 * ### Examining the exif data and searching the web
 
-	It appears that the owner of the file might be somewhat related to the copyright owner. Let's browse the web to see if something matches with the given data.
+	* It appears that the owner of the file might be somewhat related to the copyright owner. Let's browse the web to see if something matches with the given data.
 
-	Found some social media accounts under the name `OWoodflint`.
+	* Found some social media accounts under the name `OWoodflint`.
 
-	[Twitter](https://twitter.com/owoodflint?lang=en) <br>
-	[GitHub](https://github.com/OWoodfl1nt/)
+		[Twitter](https://twitter.com/owoodflint?lang=en) <br>
+		[GitHub](https://github.com/OWoodfl1nt/)
 
-	Exploring the Twitter account for this person, we find that he uses a free Wireless Access Point with the BSSID: `B4:5D:50:AA:86:41`
+	* Exploring the Twitter account for this person, we find that he uses a free Wireless Access Point with the BSSID: `B4:5D:50:AA:86:41`. Searching for this BSSID on [Wigle](wigle.net) (NOTE: Wigle wasn't showing the WAP name without creating a user, so created a temporary user on wigle using temp mail and searching via Search > Advanced Search)
 
-	Also, there's a repository `people_finder` in the user's GitHub account that gives some relative intelligence about the owner.
+		![Wigle Search result](ctf_files/Screenshot%202024-03-17%20232010.png)
 
-	Also, the `people_finder` repo shows that there's a blog website of this user on [Wordpress](https://oliverwoodflint.wordpress.com/).
+	* Also, there's a repository `people_finder` in the user's GitHub account that gives some relative intelligence about the owner.
 
-	Exploring the blog, gives some more relevant details such as the statement:
-	```
-	Im in New York right now, so I will update this site right away with new photos!
-	```
-	which might be the answer to one of the THM Questions.
+	* The `people_finder` repo also shows that there's a blog website of this user on [Wordpress](https://oliverwoodflint.wordpress.com/).
 
-	Looking up in the source code of the Wordpress blog, something peculiar comes up:
+	* Exploring the blog, gives some more relevant details such as the statement:
+		```
+		Im in New York right now, so I will update this site right away with new photos!
+		```
+		which might be the answer to one of the THM Questions.
+
+	* Looking up in the source code of the Wordpress blog, something peculiar comes up:
 	
-	```HTML
-	<div class="entry-content">
-	<p>Im in New York right now, so I will update this site right away with new photos!</p>
-	<p style="color:#ffffff;" class="has-text-color">pennYDr0pper.!</p>
-	</div><!-- .entry-content -->
-	```
+		```HTML
+		<div class="entry-content">
+		<p>Im in New York right now, so I will update this site right away with new photos!</p>
+		<p style="color:#ffffff;" class="has-text-color">pennYDr0pper.!</p>
+		</div><!-- .entry-content -->
+		```
 
-	There's a white text written in the HTML page, `pennYDr0pper.!`, which might be the person's password.
+		There's a white text written in the HTML page, `pennYDr0pper.!`, which might be the person's password.
 
 
 <br>
@@ -109,10 +111,10 @@ This room doesn't have a vulnerable machine to work with. Rather it requires the
 * _Q1_: What is this user's avatar of? <br> _A_: `cat`
 * _Q2_: What city is this person in? <br> _A_: `London`
 * _03_: What is the SSID of the WAP he connected to? <br> _A_: `UnileverWifi`
-* _Q3_: What is his personal email address? <br> _A_: `owoodflint@gmail.com`
-* _Q4_: What site did you find his email address on? <br> _A_: `GitHub`
-* _05_: Where has he gone on holiday? <br> _A_: `New York`
-* _06_: What is the person's password? <br> _A_: `pennYDr0pper.!`
+* _Q4_: What is his personal email address? <br> _A_: `owoodflint@gmail.com`
+* _Q5_: What site did you find his email address on? <br> _A_: `GitHub`
+* _06_: Where has he gone on holiday? <br> _A_: `New York`
+* _07_: What is the person's password? <br> _A_: `pennYDr0pper.!`
 
 
 <br>
