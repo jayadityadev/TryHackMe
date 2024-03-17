@@ -7,7 +7,7 @@
 # TryHackMe OhSINT
 
 
-<img src="https://tryhackme-images.s3.amazonaws.com/room-icons/9c6bc7e6db746ea68ecaa99e328923f1.png" alt="THM SimpleCTF" width="220px" height="220px" style="margin-right: 85px;">
+<img src="https://tryhackme-images.s3.amazonaws.com/room-icons/9c6bc7e6db746ea68ecaa99e328923f1.png" alt="THM OhSINT" width="220px" height="220px" style="margin-right: 85px;">
 <img src="https://assets.tryhackme.com/img/THMlogo.png" alt="THM Logo" width="250px" height="150px" style="margin-bottom: 50px;">
 
 <br>
@@ -75,8 +75,39 @@ This room doesn't have a vulnerable machine to work with. Rather it requires the
 
 	Found some social media accounts under the name `OWoodflint`.
 
-	[Twitter](https://twitter.com/owoodflint?lang=en)
+	[Twitter](https://twitter.com/owoodflint?lang=en) <br>
 	[GitHub](https://github.com/OWoodfl1nt/)
+
+	Also, there's a repository `people_finder` in the user's GitHub account that gives some relative intelligence about the owner.
+
+	Also, the `people_finder` repo shows that there's a blog website of this user on [Wordpress](https://oliverwoodflint.wordpress.com/).
+
+	Exploring the blog, gives some more relevant details such as the statement:
+	```Im in New York right now, so I will update this site right away with new photos!```
+	which might be the answer to one of the THM Questions.
+
+	Looking up in the source code of the Wordpress blog, something peculiar comes up:
+	
+	```HTML
+	<div class="entry-content">
+	<p>Im in New York right now, so I will update this site right away with new photos!</p>
+	<p style="color:#ffffff;" class="has-text-color">pennYDr0pper.!</p>
+	</div><!-- .entry-content -->
+	```
+
+	There's a 
+
+
+<br>
+
+## THM Questions:
+
+* _Q1_: What is this user's avatar of? <br> _A_: `cat`
+* _Q2_: What city is this person in? <br> _A_: `London`
+* _Q3_: What is his personal email address? <br> _A_: `owoodflint@gmail.com`
+* _Q4_: What site did you find his email address on? <br> _A_: `GitHub`
+* _05_: Where has he gone on holiday? <br> _A_: `New York`
+
 
 	
 ---
