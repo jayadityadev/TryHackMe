@@ -80,7 +80,7 @@ This room doesn't have a vulnerable machine to work with. Rather it requires the
 
 	* Exploring the Twitter account for this person, we find that he uses a free Wireless Access Point with the BSSID: `B4:5D:50:AA:86:41`. Searching for this BSSID on [Wigle](wigle.net) (NOTE: Wigle wasn't showing the WAP name without creating a user, so created a temporary user on wigle using temp mail and searching via Search > Advanced Search)
 
-		![Wigle Search result](Screenshot%202024-03-17%20232010.png)
+		![Wigle Search result](ctf_files/Screenshot%202024-03-17%20232010.png)
 
 	* Also, there's a repository `people_finder` in the user's GitHub account that gives some relative intelligence about the owner.
 
