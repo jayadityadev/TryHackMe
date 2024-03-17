@@ -1,3 +1,4 @@
 git_update.bat
 git_update.sh
 *.ovpn
+hidden_files/
