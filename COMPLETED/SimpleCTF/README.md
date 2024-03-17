@@ -322,7 +322,7 @@ W3ll d0n3. You made it!
 
 💻 Created by [Jayaditya Dev](https://tryhackme.com/p/jayadityadev)
 
-🚀 Find me on [GitHub](https://github.com/jayadityadev)
+🚀 Find me on [GitHub](https://github.com/jayadityadev), [LinkedIn](https://www.linkedin.com/in/jayadityadev26/) and [X](https://twitter.com/jayadityadev)
 
 </div>
 
