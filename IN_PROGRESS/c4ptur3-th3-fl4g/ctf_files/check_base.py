@@ -1,6 +1,9 @@
+# check_base.py
+
 import base64
 import re
 import sys
+import argparse 
 
 def identify_encoding(encoded_string):
     # Check if the string contains only valid Base64 characters
@@ -16,10 +19,12 @@ def identify_encoding(encoded_string):
     return "Unknown"
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python3 check_base.py <encoded_string>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Identify encoding of a string in a file.")
+    parser.add_argument("--file", type=str, required=True, help="Path to the file containing the encoded string.")
+    args = parser.parse_args()
 
-    encoded_string = sys.argv[1]
+    with open(args.file, "r") as f:
+        encoded_string = f.read().strip()  # Read the string and remove any leading/trailing whitespace
+
     encoding = identify_encoding(encoded_string)
     print("Encoding:", encoding)
