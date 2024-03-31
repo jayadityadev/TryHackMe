@@ -1,0 +1,6 @@
+/.hta                [33m (Status: 403)[0m [Size: 277]
+/.htpasswd           [33m (Status: 403)[0m [Size: 277]
+/.htaccess           [33m (Status: 403)[0m [Size: 277]
+/content             [36m (Status: 301)[0m [Size: 314][34m [--> http://10.10.111.97/content/][0m
+/index.html          [32m (Status: 200)[0m [Size: 11321]
+/server-status       [33m (Status: 403)[0m [Size: 277]
